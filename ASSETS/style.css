@@ -201,6 +201,7 @@ h2 {
 #arrow-left {
     font-size: 5rem;
     padding: 0.8rem;
+    z-index: 10;
 }
 
 #hamburger {
@@ -352,9 +353,9 @@ h3 {
     color: #ff9718;
 }
 
-/* a {
+a {
     cursor: pointer;
-} */
+}
 
 a:hover {
     color: #ff9718;
@@ -362,8 +363,6 @@ a:hover {
 }
 
 a:link {
-    /* text-decoration: underline; */
-    /* border-bottom: red 2em; */
     text-decoration: none;
     border-bottom: 0.06em solid;
 }
@@ -373,13 +372,11 @@ a:link {
     justify-content: space-between;
     position: static;
     margin: 0;
-    /* padding: 3rem; */
     padding-top: 0;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
     color: #F9FFF6;
-    /* align-items: flex-start; */
 }
 
 .colophon-1 {
@@ -477,6 +474,9 @@ button {
 
     .spacing-small {
         padding: 1rem;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .colophon {
@@ -497,7 +497,7 @@ button {
         text-align: center;
         align-content: space-between;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         line-height: normal;
     }
 
@@ -555,5 +555,16 @@ button {
 
     .sheet-title {
         margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .sidenav {
+        padding: 0;
+        margin: 0;
+    }
+
+    .site-description {
+        padding: 1.5rem;
     }
 }
