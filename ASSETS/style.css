@@ -199,8 +199,9 @@ h2 {
 }
 
 #arrow-left {
-    font-size: 5rem;
+    font-size: 10rem;
     padding: 0.8rem;
+    line-height: 1.125;
     z-index: 10;
 }
 
@@ -220,7 +221,7 @@ h2 {
 
 #arrow {
     font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
-    font-size: 5rem;
+    font-size: 10rem;
     line-height: .9;
     margin: 0;
     padding: 0;
@@ -555,6 +556,17 @@ button {
 
     .sheet-title {
         margin-bottom: 2rem;
+    }
+
+    #arrow-left {
+        font-size: 5rem;
+        padding: 0.8rem;
+        line-height: normal;
+    }
+    
+    #arrow {
+        font-size: 5rem;
+        line-height: .9;
     }
 }
 
