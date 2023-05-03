@@ -1,0 +1,529 @@
+@font-face {
+    font-family: 'Saltburn Extra Bold';
+    src: url('./FONTS/Saltburn/WTSaltburn-ExtraBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Saltburn Bold';
+    src: url('./FONTS/Saltburn/WTSaltburn-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Saltburn Medium';
+    src: url('./FONTS/Saltburn/WTSaltburn-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Saltburn Regular';
+    src: url('./FONTS/Saltburn/WTSaltburn-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Saltburn Light';
+    src: url('./FONTS/Saltburn/WTSaltburn-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Saltburn Ligh Italic';
+    src: url('./FONTS/Saltburn/WTSaltburn-LightItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    overflow-x: hidden;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    background: rgb(8, 7, 8);
+    color: #F9FFF6;
+    margin: 0;
+    padding: 0;
+}
+
+.coord-title {
+    font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
+    font-size: 18vw;
+    line-height: .9;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.coord-content:hover {
+    cursor: pointer;
+    color: #FCFF6C;
+    transition: 0.3s ease;
+}
+
+.sheet-wrapper {
+    display: none;
+    background: #F9FFF6;
+    color: rgb(8, 7, 8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 8;
+    margin: 0;
+    padding: 5rem;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.sheet-wrapper.is-open {
+    display: block;
+}
+
+.sheet-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sheet-head {
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    align-content: space-between;
+}
+
+.sheet-title {
+    align-content: space-between;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.x {
+    display: flex;
+    position: relative;
+    font-size: 4rem;
+    text-align: right;
+    padding-right: 2rem;
+    line-height: 0.1;
+    z-index: 10;
+    cursor: pointer;
+    justify-content: flex-end;
+    align-items: baseline;
+    top: 0;
+}
+
+.x:hover {
+    color: #ff9718;
+    transition: 0.3s ease;
+}
+
+.sheet-specifics {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    line-height: 3;
+    margin: 2rem;
+    margin-top: 0;
+}
+
+.bold {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Saltburn Medium', Helvetica, Arial, sans-serif;
+}
+
+.sheet-terms {
+    text-transform: uppercase;
+}
+
+.sheet-description {
+    font-family: 'Saltburn Medium', Helvetica, Arial, sans-serif;
+    text-align: right;
+}
+
+h1 {
+    font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
+}
+
+h2 {
+    font-family: 'Saltburn Bold', Helvetica, Arial, sans-serif;
+}
+
+.line {
+    width: auto;
+    height: 2px;
+    background-color: rgb(8, 7, 8);
+    margin: 2rem;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(8, 7, 8);
+    overflow-x: hidden;
+    padding-top: 6rem;
+    transition: 0.8s;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.sidenav a:hover {
+    color: #ff9718;
+    transition: 0.3s ease;
+}
+
+.sidenav .close-btn {
+    position: absolute;
+    top: 0;
+    right: 6rem;
+    font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
+}
+
+#arrow-left {
+    font-size: 5rem;
+    padding: 0.8rem;
+}
+
+#hamburger {
+    transition: margin-left 10s ease-in-out;
+    padding-left: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.site-description {
+    margin: 0;
+    padding: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+#arrow {
+    font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
+    font-size: 5rem;
+    line-height: .9;
+    margin: 0;
+    padding: 0;
+}
+
+#arrow:hover {
+    color: #ff9718;
+    transition: 0.3s ease;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    -webkit-transition: opacity 1000ms linear;
+    transition: opacity 1000ms linear;
+    cursor: auto;
+    z-index: 9;
+}
+
+.side-head {
+    font-size: 2rem;
+    text-align: center;
+    align-content: space-between;
+}
+
+.subhead {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.designer {
+    display: block;
+    text-align: center;
+}
+
+.line-side {
+    width: auto;
+    height: 2px;
+    background-color: #F9FFF6;
+    margin: 2rem;
+}
+
+.side-title {
+    justify-content: space-between;
+    font-size: 2rem;
+    padding-top: 0rem;
+}
+
+.what {
+    font-size: 2rem;
+}
+
+.specifics {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    line-height: 3;
+    margin: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1rem;
+}
+
+.terms {
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.description {
+    text-align: right;
+}
+
+h3 {
+    font-family: 'Saltburn Light', Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+.short {
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.shorter {
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.space {
+    padding: 2rem;
+}
+
+.site-description-wrapper {
+    position: relative;
+}
+
+#footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding-top: 3rem;
+    color: #FCFF6C;
+}
+
+.footer-main {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    padding: 3rem;
+    padding-left: 1.5rem;
+    color: #F9FFF6;
+}
+
+.footer-main-right {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    margin: 0;
+    padding: 3rem;
+    padding-right: 5rem;
+    color: #F9FFF6;
+}
+
+#footer-style {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.color {
+    color: #FCFF6C;
+}
+
+.orange {
+    color: #ff9718;
+}
+
+/* a {
+    color: #FCFF6C;
+} */
+
+a:hover {
+    color: #ff9718;
+    transition: 0.3s ease;
+}
+
+a:link {
+    /* text-decoration: underline; */
+    /* border-bottom: red 2em; */
+    text-decoration: none;
+    border-bottom: 0.06em solid;
+}
+
+.colophon {
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    margin: 0;
+    /* padding: 3rem; */
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    color: #F9FFF6;
+    /* align-items: flex-start; */
+}
+
+.colophon-1 {
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.colophon-2 {
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.colophon-3 {
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.small-specifics {
+    display: none;
+}
+
+.small-sheet-specifics {
+    display: none;
+}
+
+#cv {
+    width: 10000;
+    height: 10000;
+}
+
+@media screen and (max-width:940px) {
+    #cv {
+        width: 100%;
+        height: 100%;
+    }
+
+    .short {
+        padding: 0;
+    }
+
+    .shorter {
+        padding: 0;
+    }
+
+    .subhead {
+        flex-direction: column;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .spacing-small {
+        padding: 1rem;
+    }
+
+    .colophon {
+        flex-direction: column;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .specifics {
+        display: none;
+    }
+
+    .small-specifics {
+        margin: 0;
+        padding: 2rem;
+        text-align: center;
+        font-size: 2rem;
+        text-align: center;
+        align-content: space-between;
+        display: flex;
+        justify-content: space-between;
+        line-height: normal;
+    }
+
+    .small-sheet-specifics {
+        margin: 0;
+        padding: 2rem;
+        padding-top: 0;
+        text-align: center;
+        text-align: center;
+        align-content: space-between;
+        display: flex;
+        justify-content: center;
+        line-height: normal;
+        overflow-y: scroll;
+    }
+
+    .sheet-terms {
+        font-size: 1.5rem;
+        line-height: norm;
+        flex-wrap: wrap;
+    }
+
+    .sheet-description {
+        text-align: center;
+    }
+
+    .small-term {
+        padding: 2rem;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+    }
+
+    .sd-3 {
+        flex-direction: column;
+        justify-items: center;
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    .sheet-specifics {
+        padding: 0;
+        justify-content: center;
+        display: none;
+    }
+
+    .x {
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+
+    .sheet-wrapper {
+        padding: 2rem;
+    }
+
+    .sheet-title {
+        margin-bottom: 2rem;
+    }
+}
