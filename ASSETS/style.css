@@ -57,6 +57,26 @@ body {
     padding: 0;
 }
 
+h1 {
+    font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
+}
+
+h2 {
+    font-family: 'Saltburn Bold', Helvetica, Arial, sans-serif;
+}
+
+h3 {
+    font-family: 'Saltburn Light', Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+.bold {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Saltburn Medium', Helvetica, Arial, sans-serif;
+}
+
+/* Coordinates */
 .coord-title {
     font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
     font-size: 18vw;
@@ -72,8 +92,8 @@ body {
     transition: 0.3s ease;
 }
 
+/* Sheet with Open Data Information */
 .sheet-wrapper {
-    display: none;
     background: #F9FFF6;
     color: rgb(8, 7, 8);
     position: fixed;
@@ -87,10 +107,14 @@ body {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    /* transform initial state of wrapper 100% to the left */
+    transform: translateX(-100%);
+    transition: transform 1s cubic-bezier(.16, 1, .3, 1);
 }
 
 .sheet-wrapper.is-open {
-    display: block;
+    /* remove transform when wrapper is open */
+    transform: translateX(0)
 }
 
 .sheet-info {
@@ -140,12 +164,6 @@ body {
     margin-top: 0;
 }
 
-.bold {
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-family: 'Saltburn Medium', Helvetica, Arial, sans-serif;
-}
-
 .sheet-terms {
     text-transform: uppercase;
 }
@@ -155,14 +173,23 @@ body {
     text-align: right;
 }
 
-h1 {
-    font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    -webkit-transition: opacity 1000ms linear;
+    transition: opacity 1000ms linear;
+    cursor: auto;
+    z-index: 9;
 }
 
-h2 {
-    font-family: 'Saltburn Bold', Helvetica, Arial, sans-serif;
+#cv {
+    width: 10000;
+    height: 10000;
 }
 
+/* Side page with information about the project */
 .line {
     width: auto;
     height: 2px;
@@ -211,6 +238,10 @@ h2 {
     padding-bottom: 1.5rem;
 }
 
+.site-description-wrapper {
+    position: relative;
+}
+
 .site-description {
     margin: 0;
     padding: 5rem;
@@ -230,17 +261,6 @@ h2 {
 #arrow:hover {
     color: #ff9718;
     transition: 0.3s ease;
-}
-
-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 1;
-    -webkit-transition: opacity 1000ms linear;
-    transition: opacity 1000ms linear;
-    cursor: auto;
-    z-index: 9;
 }
 
 .side-head {
@@ -297,77 +317,6 @@ canvas {
     text-align: right;
 }
 
-h3 {
-    font-family: 'Saltburn Light', Helvetica, Arial, sans-serif;
-    font-size: 1.5rem;
-}
-
-.short {
-    padding-left: 7rem;
-    padding-right: 7rem;
-}
-
-.shorter {
-    padding-left: 8rem;
-    padding-right: 8rem;
-}
-
-.space {
-    padding: 2rem;
-}
-
-.site-description-wrapper {
-    position: relative;
-}
-
-#footer {
-    position: static;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    padding-top: 3rem;
-    color: #FCFF6C;
-}
-
-.footer-main {
-    position: static;
-    bottom: 0;
-    width: 100%;
-    text-align: left;
-    margin: 0;
-    padding: 3rem;
-    padding-left: 1.5rem;
-    color: #F9FFF6;
-}
-
-#footer-style {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.color {
-    color: #FCFF6C;
-}
-
-.orange {
-    color: #ff9718;
-}
-
-a {
-    cursor: pointer;
-}
-
-a:hover {
-    color: #ff9718;
-    transition: 0.3s ease;
-}
-
-a:link {
-    text-decoration: none;
-    border-bottom: 0.06em solid;
-}
-
 .colophon {
     display: flex;
     justify-content: space-between;
@@ -399,17 +348,79 @@ a:link {
     padding: 2rem;
 }
 
+/* Custom padding */
+.short {
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.shorter {
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.space {
+    padding: 2rem;
+}
+
+#footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding-top: 3rem;
+    color: #FCFF6C;
+}
+
+/* Footer for the main page */
+.footer-main {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    padding: 3rem;
+    padding-left: 1.5rem;
+    color: #F9FFF6;
+}
+
+#footer-style {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Single color classes */
+.color {
+    color: #FCFF6C;
+}
+
+.orange {
+    color: #ff9718;
+}
+
+/* Links */
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    color: #ff9718;
+    transition: 0.3s ease;
+}
+
+a:link {
+    text-decoration: none;
+    border-bottom: 0.06em solid;
+}
+
+/* I don't know why having these here work and it being paced higher up doesn't, but hey, it looks fine */
 .small-specifics {
     display: none;
 }
 
 .small-sheet-specifics {
     display: none;
-}
-
-#cv {
-    width: 10000;
-    height: 10000;
 }
 
 /* The Modal (background) */
@@ -563,7 +574,7 @@ button {
         padding: 0.8rem;
         line-height: normal;
     }
-    
+
     #arrow {
         font-size: 5rem;
         line-height: .9;
