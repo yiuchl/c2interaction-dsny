@@ -137,9 +137,10 @@ h3 {
 }
 
 .x {
+    font-family: 'Saltburn Medium', Helvetica, Arial, sans-serif;
     display: flex;
     position: relative;
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: right;
     padding-right: 2rem;
     line-height: 0.1;
@@ -557,8 +558,10 @@ button {
     }
 
     .x {
+        padding: 0;
         justify-content: center;
         padding-bottom: 2rem;
+        margin: 0;
     }
 
     .sheet-wrapper {
