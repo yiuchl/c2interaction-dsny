@@ -104,12 +104,15 @@ h3 {
     z-index: 8;
     margin: 0;
     padding: 5rem;
+    padding-top: 0;
+    /* padding-top: 1rem; */
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
     /* transform initial state of wrapper 100% to the left */
     transform: translateX(-100%);
     transition: transform 1s cubic-bezier(.16, 1, .3, 1);
+    overflow: scroll;
 }
 
 .sheet-wrapper.is-open {
@@ -121,6 +124,7 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: scroll;
 }
 
 .sheet-head {
@@ -128,16 +132,24 @@ h3 {
     font-size: 2rem;
     text-align: center;
     align-content: space-between;
+    padding: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .sheet-title {
     align-content: space-between;
     justify-content: space-between;
-    margin-bottom: 5rem;
+    font-size: 5rem;
+    padding: 2rem;
+    padding-top: 0;
+    /* padding-top: 0.4rem; */
+    padding-bottom: 2.5rem;
 }
 
 .x {
-    font-family: 'Saltburn Medium', Helvetica, Arial, sans-serif;
+    padding-top: 1rem;
+    font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
     display: flex;
     position: relative;
     font-size: 5rem;
@@ -186,8 +198,8 @@ canvas {
 }
 
 #cv {
-    width: 10000;
-    height: 10000;
+    width: 100%;
+    height: 100%;
 }
 
 /* Side page with information about the project */
@@ -226,11 +238,39 @@ canvas {
     font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
 }
 
+#arrow {
+    font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
+    font-size: 7rem;
+    line-height: .9;
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+}
+
+#arrow:hover {
+    color: #ff9718;
+    transition: 0.3s ease;
+}
+
+
 #arrow-left {
-    font-size: 10rem;
+    font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
+    font-size: 7rem;
     padding: 0.8rem;
     line-height: 1.125;
     z-index: 10;
+    font-weight: 900;
+    padding-top: 1rem;
+}
+
+#arrow-left-2 {
+    font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
+    font-size: 7rem;
+    line-height: 1;
+    z-index: 10;
+    margin: 0;
+    text-align: end;
+    padding-top: 0;
 }
 
 #hamburger {
@@ -249,19 +289,6 @@ canvas {
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
-}
-
-#arrow {
-    font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
-    font-size: 10rem;
-    line-height: .9;
-    margin: 0;
-    padding: 0;
-}
-
-#arrow:hover {
-    color: #ff9718;
-    transition: 0.3s ease;
 }
 
 .side-head {
@@ -290,8 +317,10 @@ canvas {
 
 .side-title {
     justify-content: space-between;
-    font-size: 2rem;
-    padding-top: 0rem;
+    font-size: 5rem;
+    padding: 2rem;
+    padding-top: 0.4rem;
+    padding-bottom: 2.5rem;
 }
 
 .what {
@@ -358,6 +387,11 @@ canvas {
 .shorter {
     padding-left: 8rem;
     padding-right: 8rem;
+}
+
+.shortest {
+    padding-left: 13.8rem;
+    padding-right: 13.8rem;
 }
 
 .space {
@@ -524,7 +558,6 @@ button {
         display: flex;
         justify-content: center;
         line-height: normal;
-        overflow-y: scroll;
     }
 
     .sheet-terms {
@@ -578,6 +611,12 @@ button {
         line-height: normal;
     }
 
+    #arrow-left-2 {
+        font-size: 5rem;
+        line-height: normal;
+        z-index: 10;
+    }
+
     #arrow {
         font-size: 5rem;
         line-height: .9;
@@ -592,5 +631,15 @@ button {
 
     .site-description {
         padding: 1.5rem;
+    }
+
+    .sheet-title {
+        font-size: 2rem;
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+    .x {
+        font-size: 4rem;
     }
 }

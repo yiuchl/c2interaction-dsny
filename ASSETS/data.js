@@ -32,10 +32,10 @@ function renderItems(collection) {
 
         <div class="sheet-info">
 
-        <div class="x">&times;</div>
+        <div id="arrow-left-2" class="close-btn x">⬅</div>
         <div class="sheet-head">
-            <div class="sheet-title">
-                <h2>DSNY-GRAFFITI-TRACKING-MANAHTTAN</h2>
+            <div>
+                <h2 class="sheet-title">DSNY-GRAFFITI-TRACKING-MANHATTAN</h2>
             </div>
             <h2>Community Board</h2>
             <h3 class="bold">${item.COMMUNITY_BOARD}</h3>
