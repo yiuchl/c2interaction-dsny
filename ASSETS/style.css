@@ -607,6 +607,7 @@ button {
         justify-content: center;
         padding-bottom: 2rem;
         margin: 0;
+        cursor: pointer;
     }
 
     .sheet-wrapper {
@@ -622,17 +623,20 @@ button {
         font-size: 5rem;
         padding: 0.8rem;
         line-height: normal;
+        cursor: pointer;
     }
 
     #arrow-left-2 {
         font-size: 5rem;
         line-height: normal;
         z-index: 10;
+        cursor: pointer;
     }
 
     #arrow {
         font-size: 5rem;
         line-height: .9;
+        cursor: pointer;
     }
 
     .short {
