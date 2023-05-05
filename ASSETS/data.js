@@ -32,7 +32,7 @@ function renderItems(collection) {
 
         <div class="sheet-info">
 
-        <div id="arrow-left-2" class="close-btn x">⬅</div>
+        <div id="arrow-left-2" class="close-btn x flip2">➔</div>
         <div class="sheet-head">
             <div>
                 <h2 class="sheet-title">DSNY-GRAFFITI-TRACKING-MANHATTAN</h2>

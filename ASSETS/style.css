@@ -271,7 +271,18 @@ canvas {
     z-index: 10;
     margin: 0;
     text-align: end;
+    align-self: flex-end;
     padding-top: 0;
+    padding-left: 1.5rem;
+}
+
+.flip {
+    transform: scaleX(-1);
+}
+
+.flip2 {
+    transform: scaleX(-1);
+    position: relative;
 }
 
 #hamburger {
