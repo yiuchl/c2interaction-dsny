@@ -152,6 +152,8 @@ function renderItems(collection) {
       }
     }
 
+    // p5.js paintbrush to hold y'all over until I draw the graffiti.
+
     // Hides the sheet on click
     sheet.addEventListener('click', () => {
       sheet.classList.remove('is-open')
