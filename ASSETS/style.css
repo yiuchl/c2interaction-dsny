@@ -1,723 +1,726 @@
 @font-face {
-    font-family: 'Saltburn Extra Bold';
-    src: url('./FONTS/Saltburn/WTSaltburn-ExtraBold.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Saltburn Extra Bold';
+	src: url('./FONTS/Saltburn/WTSaltburn-ExtraBold.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Saltburn Bold';
-    src: url('./FONTS/Saltburn/WTSaltburn-Bold.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Saltburn Bold';
+	src: url('./FONTS/Saltburn/WTSaltburn-Bold.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Saltburn Medium';
-    src: url('./FONTS/Saltburn/WTSaltburn-Medium.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Saltburn Medium';
+	src: url('./FONTS/Saltburn/WTSaltburn-Medium.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Saltburn Regular';
-    src: url('./FONTS/Saltburn/WTSaltburn-Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Saltburn Regular';
+	src: url('./FONTS/Saltburn/WTSaltburn-Regular.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Saltburn Light';
-    src: url('./FONTS/Saltburn/WTSaltburn-Light.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Saltburn Light';
+	src: url('./FONTS/Saltburn/WTSaltburn-Light.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Saltburn Ligh Italic';
-    src: url('./FONTS/Saltburn/WTSaltburn-LightItalic.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Saltburn Ligh Italic';
+	src: url('./FONTS/Saltburn/WTSaltburn-LightItalic.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 * {
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 ::-moz-selection {
-    background: transparent;
+	background: transparent;
 }
 
 ::selection {
-    background: transparent;
+	background: transparent;
 }
 
 html {
-    width: 100%;
-    height: 100%;
-    padding: 2rem;
-    overflow-x: hidden;
+	width: 100%;
+	height: 100%;
+	padding: 2rem;
+	overflow-x: hidden;
 }
 
 body {
-    background: rgb(8, 7, 8);
-    color: #F9FFF6;
-    margin: 0;
-    padding: 0;
+	background: rgb(8, 7, 8);
+	color: #f9fff6;
+	margin: 0;
+	padding: 0;
+}
+
+::-webkit-scrollbar {
+	display: none;
 }
 
 h1 {
-    font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
+	font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
 }
 
 h2 {
-    font-family: 'Saltburn Bold', Helvetica, Arial, sans-serif;
+	font-family: 'Saltburn Bold', Helvetica, Arial, sans-serif;
 }
 
 h3 {
-    font-family: 'Saltburn Light', Helvetica, Arial, sans-serif;
-    font-size: 1.5rem;
+	font-family: 'Saltburn Light', Helvetica, Arial, sans-serif;
+	font-size: 1.5rem;
 }
 
 .bold {
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-family: 'Saltburn Medium', Helvetica, Arial, sans-serif;
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-family: 'Saltburn Medium', Helvetica, Arial, sans-serif;
 }
 
 /* Coordinates */
 .coord-title {
-    font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
-    font-size: 18vw;
-    line-height: .9;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+	font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
+	font-size: 18vw;
+	line-height: 0.9;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .coord-content:hover {
-    cursor: pointer;
-    color: #FCFF6C;
-    transition: 0.3s ease;
+	cursor: pointer;
+	color: #fcff6c;
+	transition: 0.3s ease;
 }
 
 /* Sheet with Open Data Information */
 .sheet-wrapper {
-    background: #F9FFF6;
-    color: rgb(8, 7, 8);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 8;
-    margin: 0;
-    padding: 5rem;
-    padding-top: 0;
-    /* padding-top: 1rem; */
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    /* transform initial state of wrapper 100% to the left */
-    transform: translateX(-100%);
-    transition: transform 1s cubic-bezier(.16, 1, .3, 1);
-    overflow: scroll;
+	background: #f9fff6;
+	color: rgb(8, 7, 8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 8;
+	margin: 0;
+	padding: 5rem;
+	padding-top: 0;
+	/* padding-top: 1rem; */
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	/* transform initial state of wrapper 100% to the left */
+	transform: translateX(-100%);
+	transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+	overflow: scroll;
 }
 
 .sheet-wrapper.is-open {
-    /* remove transform when wrapper is open */
-    transform: translateX(0)
+	/* remove transform when wrapper is open */
+	transform: translateX(0);
 }
 
 .sheet-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: scroll;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: scroll;
 }
 
 .sheet-head {
-    text-transform: uppercase;
-    font-size: 2rem;
-    text-align: center;
-    align-content: space-between;
-    padding: 1rem;
-    padding-top: 0;
-    padding-bottom: 0;
+	text-transform: uppercase;
+	font-size: 2rem;
+	text-align: center;
+	align-content: space-between;
+	padding: 1rem;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 .sheet-title {
-    align-content: space-between;
-    justify-content: space-between;
-    font-size: 5rem;
-    padding: 2rem;
-    padding-top: 0;
-    /* padding-top: 0.4rem; */
-    padding-bottom: 2.5rem;
+	align-content: space-between;
+	justify-content: space-between;
+	font-size: 5rem;
+	padding: 2rem;
+	padding-top: 0;
+	/* padding-top: 0.4rem; */
+	padding-bottom: 2.5rem;
 }
 
 .x {
-    padding-top: 1rem;
-    font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
-    display: flex;
-    position: relative;
-    font-size: 5rem;
-    text-align: right;
-    padding-right: 2rem;
-    line-height: 0.1;
-    z-index: 10;
-    cursor: pointer;
-    justify-content: flex-end;
-    align-items: baseline;
-    top: 0;
+	padding-top: 1rem;
+	font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
+	display: flex;
+	position: relative;
+	font-size: 5rem;
+	text-align: right;
+	padding-right: 2rem;
+	line-height: 0.1;
+	z-index: 10;
+	cursor: pointer;
+	justify-content: flex-end;
+	align-items: baseline;
+	top: 0;
 }
 
 .x:hover {
-    color: #ff9718;
-    transition: 0.3s ease;
+	color: #ff9718;
+	transition: 0.3s ease;
 }
 
 .sheet-specifics {
-    display: flex;
-    justify-content: space-between;
-    font-size: 2rem;
-    line-height: 3;
-    margin: 2rem;
-    margin-top: 0;
+	display: flex;
+	justify-content: space-between;
+	font-size: 2rem;
+	line-height: 3;
+	margin: 2rem;
+	margin-top: 0;
 }
 
 .sheet-terms {
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .sheet-description {
-    font-family: 'Saltburn Medium', Helvetica, Arial, sans-serif;
-    text-align: right;
+	font-family: 'Saltburn Medium', Helvetica, Arial, sans-serif;
+	text-align: right;
 }
 
 canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 1;
-    -webkit-transition: opacity 1000ms linear;
-    transition: opacity 1000ms linear;
-    cursor: auto;
-    z-index: 9;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	-webkit-transition: opacity 1000ms linear;
+	transition: opacity 1000ms linear;
+	cursor: auto;
+	z-index: 9;
 }
 
 #cv {
-    width: 100vw;
-    height: 100vh;
-    z-index: 9;
+	width: 100vw;
+	height: 100vh;
+	z-index: 9;
 }
 
 /* Side page with information about the project */
 .line {
-    width: auto;
-    height: 2px;
-    background-color: rgb(8, 7, 8);
-    margin: 2rem;
+	width: auto;
+	height: 2px;
+	background-color: rgb(8, 7, 8);
+	margin: 2rem;
 }
 
 .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(8, 7, 8);
-    overflow-x: hidden;
-    padding-top: 6rem;
-    transition: 0.8s;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(8, 7, 8);
+	overflow-x: hidden;
+	padding-top: 6rem;
+	transition: 0.8s;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .sidenav a:hover {
-    color: #ff9718;
-    transition: 0.3s ease;
+	color: #ff9718;
+	transition: 0.3s ease;
 }
 
 .sidenav .close-btn {
-    position: absolute;
-    top: 0;
-    right: 6rem;
-    font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
+	position: absolute;
+	top: 0;
+	right: 6rem;
+	font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
 }
 
 #arrow {
-    font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
-    font-size: 9rem;
-    line-height: .9;
-    margin: 0;
-    padding: 0;
-    font-weight: 900;
+	font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
+	font-size: 9rem;
+	line-height: 0.9;
+	margin: 0;
+	padding: 0;
+	font-weight: 900;
 }
 
 #arrow:hover {
-    color: #ff9718;
-    transition: 0.3s ease;
+	color: #ff9718;
+	transition: 0.3s ease;
 }
 
-
 #arrow-left {
-    font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
-    font-size: 9rem;
-    padding: 0.8rem;
-    line-height: 1.125;
-    z-index: 10;
-    font-weight: 900;
-    padding-top: 1rem;
+	font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
+	font-size: 9rem;
+	padding: 0.8rem;
+	line-height: 1.125;
+	z-index: 10;
+	font-weight: 900;
+	padding-top: 1rem;
 }
 
 #arrow-left-2 {
-    font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
-    font-size: 9rem;
-    line-height: 1;
-    z-index: 10;
-    margin: 0;
-    text-align: end;
-    align-self: flex-end;
-    padding-top: 0;
-    padding-left: 1.5rem;
+	font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
+	font-size: 9rem;
+	line-height: 1;
+	z-index: 10;
+	margin: 0;
+	text-align: end;
+	align-self: flex-end;
+	padding-top: 0;
+	padding-left: 1.5rem;
 }
 
 .flip {
-    transform: scaleX(-1);
+	transform: scaleX(-1);
 }
 
 .flip2 {
-    transform: scaleX(-1);
-    position: relative;
+	transform: scaleX(-1);
+	position: relative;
 }
 
 #hamburger {
-    transition: margin-left 10s ease-in-out;
-    padding-left: 1.5rem;
-    padding-bottom: 1.5rem;
+	transition: margin-left 10s ease-in-out;
+	padding-left: 1.5rem;
+	padding-bottom: 1.5rem;
 }
 
 .site-description-wrapper {
-    position: relative;
+	position: relative;
 }
 
 .site-description {
-    margin: 0;
-    padding: 5rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    text-align: center;
+	margin: 0;
+	padding: 5rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	text-align: center;
 }
 
 .side-head {
-    font-size: 2rem;
-    text-align: center;
-    align-content: space-between;
+	font-size: 2rem;
+	text-align: center;
+	align-content: space-between;
 }
 
 .subhead {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
 }
 
 .designer {
-    display: block;
-    text-align: center;
+	display: block;
+	text-align: center;
 }
 
 .line-side {
-    width: auto;
-    height: 2px;
-    background-color: #F9FFF6;
-    margin: 2rem;
+	width: auto;
+	height: 2px;
+	background-color: #f9fff6;
+	margin: 2rem;
 }
 
 .side-title {
-    justify-content: space-between;
-    font-size: 5rem;
-    padding: 2rem;
-    padding-top: 0.4rem;
-    padding-bottom: 2.5rem;
+	justify-content: space-between;
+	font-size: 5rem;
+	padding: 2rem;
+	padding-top: 0.4rem;
+	padding-bottom: 2.5rem;
 }
 
 .what {
-    font-size: 2rem;
+	font-size: 2rem;
 }
 
 .specifics {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.5rem;
-    line-height: 3;
-    margin: 2rem;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 1rem;
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.5rem;
+	line-height: 3;
+	margin: 2rem;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 1rem;
 }
 
 .terms {
-    text-transform: uppercase;
-    text-align: left;
+	text-transform: uppercase;
+	text-align: left;
 }
 
 .description {
-    text-align: right;
+	text-align: right;
 }
 
 .colophon {
-    display: flex;
-    justify-content: space-between;
-    position: static;
-    margin: 0;
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 0;
-    color: #F9FFF6;
+	display: flex;
+	justify-content: space-between;
+	position: static;
+	margin: 0;
+	padding-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	color: #f9fff6;
 }
 
 .colophon-1 {
-    text-align: center;
-    align-items: center;
-    padding: 2rem;
-    justify-content: space-between;
+	text-align: center;
+	align-items: center;
+	padding: 2rem;
+	justify-content: space-between;
 }
 
 .colophon-2 {
-    text-align: center;
-    align-items: center;
-    padding: 2rem;
+	text-align: center;
+	align-items: center;
+	padding: 2rem;
 }
 
 .colophon-3 {
-    text-align: center;
-    align-items: center;
-    padding: 2rem;
+	text-align: center;
+	align-items: center;
+	padding: 2rem;
 }
 
 /* Custom padding */
 .short {
-    padding-left: 7rem;
-    padding-right: 7rem;
+	padding-left: 7rem;
+	padding-right: 7rem;
 }
 
 .shorter {
-    padding-left: 8rem;
-    padding-right: 8rem;
+	padding-left: 8rem;
+	padding-right: 8rem;
 }
 
 .shortest {
-    padding-left: 13.8rem;
-    padding-right: 13.8rem;
+	padding-left: 13.8rem;
+	padding-right: 13.8rem;
 }
 
 .space {
-    padding: 2rem;
+	padding: 2rem;
 }
 
 #footer {
-    position: static;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    padding-top: 3rem;
-    color: #FCFF6C;
+	position: static;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	padding-top: 3rem;
+	color: #fcff6c;
 }
 
 /* Footer for the main page */
 .footer-main {
-    position: static;
-    bottom: 0;
-    width: 100%;
-    text-align: left;
-    margin: 0;
-    padding: 3rem;
-    padding-left: 1.5rem;
-    color: #F9FFF6;
+	position: static;
+	bottom: 0;
+	width: 100%;
+	text-align: left;
+	margin: 0;
+	padding: 3rem;
+	padding-left: 1.5rem;
+	color: #f9fff6;
 }
 
 #footer-style {
-    display: flex;
-    justify-content: space-evenly;
+	display: flex;
+	justify-content: space-evenly;
 }
 
 /* Single color classes */
 .color {
-    color: #FCFF6C;
+	color: #fcff6c;
 }
 
 .orange {
-    color: #ff9718;
+	color: #ff9718;
 }
 
 /* Links */
 a {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 a:hover {
-    color: #ff9718;
-    transition: 0.3s ease;
+	color: #ff9718;
+	transition: 0.3s ease;
 }
 
 a:link {
-    text-decoration: none;
-    border-bottom: 0.06em solid;
+	text-decoration: none;
+	border-bottom: 0.06em solid;
 }
 
 /* I don't know why having these here work and it being paced higher up doesn't, but hey, it looks fine */
 .small-specifics {
-    display: none;
+	display: none;
 }
 
 .small-sheet-specifics {
-    display: none;
+	display: none;
 }
 
 /* The Modal (background) */
 .modal {
-    display: none;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    position: relative;
-    padding: 2rem;
-    padding-top: 0;
+	display: none;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	position: relative;
+	padding: 2rem;
+	padding-top: 0;
 }
 
 /* Modal Content */
 .modal-content {
-    padding: 0rem;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+	padding: 0rem;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
 
 .close,
 .close2 {
-    padding: 0;
-    margin: 0;
-    font-size: 1.5rem;
+	padding: 0;
+	margin: 0;
+	font-size: 1.5rem;
 }
 
 .close:hover,
 .close:focus,
 .close2:hover,
 .close2:focus {
-    text-decoration: none;
-    cursor: pointer;
-    color: #ff9718;
-    transition: 0.3s ease;
+	text-decoration: none;
+	cursor: pointer;
+	color: #ff9718;
+	transition: 0.3s ease;
 }
 
 button {
-    cursor: pointer;
+	cursor: pointer;
 }
 
-@media screen and (max-width:1030px) {
-    #cv {
-        width: 100%;
-        height: 100%;
-    }
+@media screen and (max-width: 1030px) {
+	#cv {
+		width: 100%;
+		height: 100%;
+	}
 
-    .short {
-        padding: 0;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-    }
+	.short {
+		padding: 0;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
 
-    .shorter {
-        padding: 0;
-    }
+	.shorter {
+		padding: 0;
+	}
 
-    .shortest {
-        padding: 0;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
+	.shortest {
+		padding: 0;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
 
-    .subhead {
-        flex-direction: column;
-        justify-items: center;
-        text-align: center;
-        padding-bottom: 0;
-    }
+	.subhead {
+		flex-direction: column;
+		justify-items: center;
+		text-align: center;
+		padding-bottom: 0;
+	}
 
-    .spacing-small {
-        padding: 1rem;
-        text-align: center;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+	.spacing-small {
+		padding: 1rem;
+		text-align: center;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 
-    .colophon {
-        flex-direction: column;
-        justify-items: center;
-        text-align: center;
-    }
+	.colophon {
+		flex-direction: column;
+		justify-items: center;
+		text-align: center;
+	}
 
-    .terms,
-    .description {
-        display: none;
-    }
+	.terms,
+	.description {
+		display: none;
+	}
 
-    .small-specifics {
-        margin: 0;
-        padding: 2rem;
-        text-align: center;
-        font-size: 2rem;
-        text-align: center;
-        align-content: space-between;
-        display: flex;
-        justify-content: center;
-        line-height: normal;
-    }
+	.small-specifics {
+		margin: 0;
+		padding: 2rem;
+		text-align: center;
+		font-size: 2rem;
+		text-align: center;
+		align-content: space-between;
+		display: flex;
+		justify-content: center;
+		line-height: normal;
+	}
 
-    .small-sheet-specifics {
-        margin: 0;
-        padding: 2rem;
-        padding-top: 0;
-        text-align: center;
-        text-align: center;
-        align-content: space-between;
-        display: flex;
-        justify-content: center;
-        line-height: normal;
-    }
+	.small-sheet-specifics {
+		margin: 0;
+		padding: 2rem;
+		padding-top: 0;
+		text-align: center;
+		text-align: center;
+		align-content: space-between;
+		display: flex;
+		justify-content: center;
+		line-height: normal;
+	}
 
-    .sheet-terms {
-        font-size: 1.5rem;
-        line-height: norm;
-        flex-wrap: wrap;
-    }
+	.sheet-terms {
+		font-size: 1.5rem;
+		line-height: norm;
+		flex-wrap: wrap;
+	}
 
-    .sheet-description {
-        text-align: center;
-    }
+	.sheet-description {
+		text-align: center;
+	}
 
-    .small-term {
-        padding: 2rem;
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 0;
-    }
+	.small-term {
+		padding: 2rem;
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 0;
+	}
 
-    .sd-3 {
-        flex-direction: column;
-        justify-items: center;
-        text-align: center;
-        line-height: 2rem;
-    }
+	.sd-3 {
+		flex-direction: column;
+		justify-items: center;
+		text-align: center;
+		line-height: 2rem;
+	}
 
-    .sheet-specifics {
-        padding: 0;
-        justify-content: center;
-        display: none;
-    }
+	.sheet-specifics {
+		padding: 0;
+		justify-content: center;
+		display: none;
+	}
 
-    .x {
-        padding: 0;
-        justify-content: center;
-        padding-bottom: 2rem;
-        margin: 0;
-        cursor: pointer;
-    }
+	.x {
+		padding: 0;
+		justify-content: center;
+		padding-bottom: 2rem;
+		margin: 0;
+		cursor: pointer;
+	}
 
-    .sheet-wrapper {
-        padding: 2rem;
-        padding-top: 0;
-    }
+	.sheet-wrapper {
+		padding: 2rem;
+		padding-top: 0;
+	}
 
-    .sheet-title {
-        margin-bottom: 2rem;
-    }
+	.sheet-title {
+		margin-bottom: 2rem;
+	}
 
-    #arrow-left {
-        font-size: 5rem;
-        padding: 0.8rem;
-        line-height: normal;
-        cursor: pointer;
-    }
+	#arrow-left {
+		font-size: 5rem;
+		padding: 0.8rem;
+		line-height: normal;
+		cursor: pointer;
+	}
 
-    #arrow-left-2 {
-        font-size: 5rem;
-        line-height: normal;
-        z-index: 10;
-        cursor: pointer;
-    }
+	#arrow-left-2 {
+		font-size: 5rem;
+		line-height: normal;
+		z-index: 10;
+		cursor: pointer;
+	}
 
-    #arrow {
-        font-size: 5rem;
-        line-height: .9;
-        cursor: pointer;
-    }
+	#arrow {
+		font-size: 5rem;
+		line-height: 0.9;
+		cursor: pointer;
+	}
 
-    .side-title {
-        font-size: 2rem;
-    }
+	.side-title {
+		font-size: 2rem;
+	}
 
-    .side-title {
-        padding-bottom: 0;
-    }
+	.side-title {
+		padding-bottom: 0;
+	}
 }
 
-@media screen and (max-width:550px) {
-    .sheet-title {
-        font-size: 2rem;
-        padding-bottom: 0;
-        text-align: center;
-    }
+@media screen and (max-width: 550px) {
+	.sheet-title {
+		font-size: 2rem;
+		padding-bottom: 0;
+		text-align: center;
+	}
 
-    .side-title {
-        padding-bottom: 0;
-    }
+	.side-title {
+		padding-bottom: 0;
+	}
 }
 
-@media screen and (max-width:375px) {
-    .sidenav {
-        padding: 0;
-        margin: 0;
-    }
+@media screen and (max-width: 375px) {
+	.sidenav {
+		padding: 0;
+		margin: 0;
+	}
 
-    .side-title {
-        font-size: 1.5rem;
-        padding-bottom: 0;
-        margin-top: 2rem;
-    }
+	.side-title {
+		font-size: 1.5rem;
+		padding-bottom: 0;
+		margin-top: 2rem;
+	}
 
-    h2 {
-        font-size: 1.5rem;
-    }
+	h2 {
+		font-size: 1.5rem;
+	}
 
-    .x {
-        font-size: 4rem;
-    }
+	.x {
+		font-size: 4rem;
+	}
 
-    .short {
-        padding: 0;
-    }
+	.short {
+		padding: 0;
+	}
 
-    .shorter {
-        padding: 0;
-    }
+	.shorter {
+		padding: 0;
+	}
 
-    .shortest {
-        padding: 0;
-    }
+	.shortest {
+		padding: 0;
+	}
 
-    .specifics {
-        padding: 0;
-    }
+	.specifics {
+		padding: 0;
+	}
 
-    .bold {
-        font-size: 1.5rem;
-    }
+	.bold {
+		font-size: 1.5rem;
+	}
 }
