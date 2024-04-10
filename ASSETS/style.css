@@ -1,41 +1,41 @@
 @font-face {
-	font-family: 'Saltburn Extra Bold';
-	src: url('./FONTS/Saltburn/WTSaltburn-ExtraBold.otf') format('opentype');
+	font-family: "Saltburn Extra Bold";
+	src: url("./FONTS/Saltburn/WTSaltburn-ExtraBold.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Saltburn Bold';
-	src: url('./FONTS/Saltburn/WTSaltburn-Bold.otf') format('opentype');
+	font-family: "Saltburn Bold";
+	src: url("./FONTS/Saltburn/WTSaltburn-Bold.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Saltburn Medium';
-	src: url('./FONTS/Saltburn/WTSaltburn-Medium.otf') format('opentype');
+	font-family: "Saltburn Medium";
+	src: url("./FONTS/Saltburn/WTSaltburn-Medium.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Saltburn Regular';
-	src: url('./FONTS/Saltburn/WTSaltburn-Regular.otf') format('opentype');
+	font-family: "Saltburn Regular";
+	src: url("./FONTS/Saltburn/WTSaltburn-Regular.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Saltburn Light';
-	src: url('./FONTS/Saltburn/WTSaltburn-Light.otf') format('opentype');
+	font-family: "Saltburn Light";
+	src: url("./FONTS/Saltburn/WTSaltburn-Light.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Saltburn Ligh Italic';
-	src: url('./FONTS/Saltburn/WTSaltburn-LightItalic.otf') format('opentype');
+	font-family: "Saltburn Ligh Italic";
+	src: url("./FONTS/Saltburn/WTSaltburn-LightItalic.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -77,27 +77,27 @@ body {
 }
 
 h1 {
-	font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
+	font-family: "Saltburn Extra Bold", Helvetica, Arial, sans-serif;
 }
 
 h2 {
-	font-family: 'Saltburn Bold', Helvetica, Arial, sans-serif;
+	font-family: "Saltburn Bold", Helvetica, Arial, sans-serif;
 }
 
 h3 {
-	font-family: 'Saltburn Light', Helvetica, Arial, sans-serif;
+	font-family: "Saltburn Light", Helvetica, Arial, sans-serif;
 	font-size: 1.5rem;
 }
 
 .bold {
 	font-size: 2rem;
 	text-transform: uppercase;
-	font-family: 'Saltburn Medium', Helvetica, Arial, sans-serif;
+	font-family: "Saltburn Medium", Helvetica, Arial, sans-serif;
 }
 
 /* Coordinates */
 .coord-title {
-	font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
+	font-family: "Saltburn Extra Bold", Helvetica, Arial, sans-serif;
 	font-size: 18vw;
 	line-height: 0.9;
 	-webkit-user-select: none;
@@ -168,7 +168,7 @@ h3 {
 
 .x {
 	padding-top: 1rem;
-	font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
+	font-family: "Saltburn Extra Bold", Helvetica, Arial, sans-serif;
 	display: flex;
 	position: relative;
 	font-size: 5rem;
@@ -201,7 +201,7 @@ h3 {
 }
 
 .sheet-description {
-	font-family: 'Saltburn Medium', Helvetica, Arial, sans-serif;
+	font-family: "Saltburn Medium", Helvetica, Arial, sans-serif;
 	text-align: right;
 }
 
@@ -255,11 +255,11 @@ canvas {
 	position: absolute;
 	top: 0;
 	right: 6rem;
-	font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
+	font-family: "Saltburn Extra Bold", Helvetica, Arial, sans-serif;
 }
 
 #arrow {
-	font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
+	font-family: "Saltburn Extra Bold", Helvetica, Arial, sans-serif;
 	font-size: 9rem;
 	line-height: 0.9;
 	margin: 0;
@@ -273,7 +273,7 @@ canvas {
 }
 
 #arrow-left {
-	font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
+	font-family: "Saltburn Extra Bold", Helvetica, Arial, sans-serif;
 	font-size: 9rem;
 	padding: 0.8rem;
 	line-height: 1.125;
@@ -283,7 +283,7 @@ canvas {
 }
 
 #arrow-left-2 {
-	font-family: 'Saltburn Extra Bold', Helvetica, Arial, sans-serif;
+	font-family: "Saltburn Extra Bold", Helvetica, Arial, sans-serif;
 	font-size: 9rem;
 	line-height: 1;
 	z-index: 10;
@@ -685,6 +685,21 @@ button {
 
 	.side-title {
 		padding-bottom: 0;
+	}
+
+	.small-specifics {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.space {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.colophon-1 {
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
