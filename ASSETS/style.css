@@ -703,7 +703,7 @@ button {
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
 	.sidenav {
 		padding: 0;
 		margin: 0;
@@ -739,7 +739,22 @@ button {
 		padding: 0;
 	}
 
+	.small-specifics {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 	.bold {
 		font-size: 1.5rem;
+	}
+
+	.space {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.colophon-1 {
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
